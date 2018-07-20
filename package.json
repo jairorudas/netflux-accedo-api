@@ -1,0 +1,25 @@
+{
+    "name": "api-netflux-accedo",
+    "version": "1.0.0",
+    "description": "Simple API for a test",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "author": "jairorudas",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.4",
+        "crypto": "^1.0.1",
+        "express": "^4.16.3",
+        "jwt-simple": "^0.5.1",
+        "moment": "^2.22.2",
+        "mongoose": "^5.0.18",
+        "request": "^2.87.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.17.3"
+    }
+}
