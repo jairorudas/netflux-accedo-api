@@ -3,9 +3,9 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const ProductSchema = Schema({
+const HistorySchema = Schema({
     id: String,
-    history: Array
+    show: [{}]
 })
 
-module.exports = mongoose.model('Product', ProductSchema)
+module.exports = mongoose.model('History', HistorySchema)

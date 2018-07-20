@@ -1,6 +1,6 @@
 'use strict'
 
-const User = require('../models/user')
+const User = require('../models/User')
 const service = require('../services')
 
 function signUp(req, res) {
@@ -13,7 +13,7 @@ function signUp(req, res) {
     user.save((err) => {
         if (err) return res.status(500).send({ message: `Error when create User: ${err}` })
 
-        return res.status(201).send({ token: service.createToken(user) })
+        return res.status(201).send({ token: service.createToken(user), id: user._id })
     })
 }
 
